@@ -170,6 +170,7 @@ export default defineLayout<LayoutOptions>({
 					day: { displayEventTime },
 				},
 				events: events.value,
+				timeZone: "Asia/Bangkok",
 				initialDate: viewInfo.value?.startDateStr ?? formatISO(new Date()),
 				eventClick(info) {
 					if (!collection.value) return;
